@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- BOOTSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+     <!-- ICONS -->
+     <script src="https://kit.fontawesome.com/a009c454f8.js" crossorigin="anonymous"></script>
+     <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+     <!-- CSS -->
+     <link rel="stylesheet" href="assets/css/normalize.css">
+     <link rel="stylesheet" href="assets/css/styles.css">
+         <!-- JAVASCRIPT -->
+    <script src="assets/util/util.js"></script>
+    <script src="assets/util/projectList.js"></script>
+    <script src="assets/util/test.js"></script>
+    <title>Portafolio</title>
+</head>
+<body onload="javascript:projects();">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col">
+                <nav class="navbar navbar-dark bg-gradient bg-secondary fixed-top">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                      <a class="navbar-brand" href="#">Portafolio María Cristina</a>
+                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header bg-secondary text-light">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Portafolio de María Cristina</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item" >
+                                <a class="nav-link text-muted" href="#">Acerca de mí</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-muted" href="#knowledge">Conocimientos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="#projects">Proyectos</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-muted" href="#contact">Contacto</a>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            <!-- FIN NAVBAR OFFCANVAS -->
+            </div>
+        </div>
+<!-- ACERCA DE MI SECTION -->
+        <div class="row">
+            <div class="col text-center">
+                <img class="rounded-circle mt-5 img-fluid about" id="about" src="assets/img/FotoPerfil.jpg" alt="Mi imagen">
+                <h1>Acerca de mí</h1>
+                <p> Profesional Constructor Civil de la Pontificia Universidad Católica de Chile con sólida formación administrativa y técnica enfocado principalmente en el desarrollo y materialización de proyectos de construcción. Con capacidad para trabajos en equipo, bajo presión, liderazgo, pro-actividad e innovación, como también en funciones que requieren de análisis y planificación para toma de decisiones pudiendo adaptarse con facilidad y rapidez a nuevos desafíos.
+                Actualmente, finalizando sus estudios como Desarrollador en Aplicaciones Web FullStack Python otorgada por Beca Sence en conjunto a Inforcap y Desafio Latam.
+                Destaca por ser minuciosa, dedicada y determinada en la elaboración de tareas a desempeñar.
+                Cuenta con gran motivación, disponibilidad e interés por aprender y ampliar sus conocimientos que le permitan buscar posibilidades de desarrollo y proyección profesional.</p>
+            </div>
+        </div>
+        <!-- ACERCA DE MI END SECTION -->
+        <!-- CONOCIMIENTOS SECTION -->
+        <div class="row" id="knowledge">
+        <div class="col-12">
+            <h4 class="text-light bg-secondary rounded-pill pt-1 text-center">CONOCIMIENTOS</h4>
+            <div class="row text-center">
+            <div class="col icon">
+                <i class="fa-brands fa-html5 fa-3x mt-3 mb-2"></i>
+                <p>HTML 5</p>
+            </div>
+            <div class="col icon">
+                <i class="fa-brands fa-css3-alt fa-3x mt-3 mb-2"></i>
+                <p>CSS</p>
+            </div>
+            <div class="col icon">
+                <i class="fa-brands fa-bootstrap fa-3x mt-3 mb-2"></i>
+                <p>BOOTSTRAP</p>
+            </div>
+            <div class="col icon">
+                <i class="fa-solid fa-database fa-3x mt-3 mb-2"></i>
+                <p>SQL</p>
+            </div>
+            <div class="col icon">
+                <i class="fa-brands fa-js fa-3x mt-3 mb-2"></i>
+                <p>JAVASCRIPT</p>
+            </div>
+            <div class="col icon">
+                <i class="fa-brands fa-python fa-3x mt-3 mb-2"></i>
+                <p>PYTHON</p>
+            </div>
+            </div>
+         </div>
+        </div>
+        <!-- CONOCIMIENTOS END SECTION -->
+        <!-- PROYECTOS SECTION -->
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-light bg-secondary rounded-pill pt-1 text-center" id="projects">PROYECTOS</h4>
+            </div>
+            <div class="projects">
+                <div class="col-12 col-lg-4 mt-5 mb-3 home all d-none" id="project">
+                    <div class="card shadow">
+                        <img src="" class="card-img-top" alt="CV PRIMER PROYECTO">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"></p>
+                        </div>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#comunModal" id=""
+                        onclick="javascript:proyectDetail(this);" type="button">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Común proyectos -->
+            <div class="modal fade" id="comunModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-secondary text-light">
+                            <h5 class="modal-title  text-light" id="exampleModalLabel"></h5>
+                            <button type="button" class="btn-close btn-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img>
+                            <p></p>
+                        </div>
+                        <div class="modal-footer bg-secondary">
+                            <a type="button" class="btn btn-light" target="_blank" id="repositorio">Ir a repositorio GitHub</a>
+                            <a type="button" class="btn btn-light" target="_blank" id="web">Ir a proyecto web</a>
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- COMUN MODAL END -->
+        </div>
+        <!-- PROYECTOS END SECTION -->
+                <!-- CONTACT SECTION -->
+        <div class="row">
+            <div class="col-12 text-center text-light  p-2 rounded" id="contact">
+                <h4 class="text-light bg-secondary rounded-pill pt-1 text-center">CONTACTO</h4>
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="https://www.linkedin.com/in/maría-cristina-pérez-de-arce-charme-465956247" target="_blank">
+                            <i class="fa-brands fa-linkedin-in fa-3x icon" id="linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="chris.pdeacharme@gmail.com" target="_blank">
+                            <i class="fa fa-envelope-square fa-3x icon" aria-hidden="true" id="correo electrónico"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://github.com/mclight48" target="_blank">
+                            <i class="fa-brands fa-github fa-3x icon" id="github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CONTACT SECTION -->
+        <!-- FOOTER SECTION -->
+        <footer>
+            <footer class="bg-gradient bg-secondary text-center text-light mt-5 p-4 rounded">
+                <p class="mb-0">© María Cristina Pérez de Arce. Todos los derechos reservados.</p>
+            </footer>
+        </footer>
+        </div>
+<!-- JavaScript Bundle with Popper BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+</body>
+</html>
